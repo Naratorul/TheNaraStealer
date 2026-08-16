@@ -1,4 +1,4 @@
-# TheNaraStealer — Threat Analysis & Defensive Research Report
+# TheNaraStealer
 
 [![Research Use Only](https://img.shields.io/badge/Purpose-Defensive%20Research-red)](#disclaimer)
 [![MITRE ATT&CK](https://img.shields.io/badge/MITRE%20ATT%26CK-Credential%20Access-orange)](https://attack.mitre.org/)
